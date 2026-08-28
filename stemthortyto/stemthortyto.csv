@@ -1,0 +1,27 @@
+Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Exclude from Simulation,Exclude from Position Files,Footprint,Datasheet,Price
+AE1,1,Antenna,,,,,${EXCLUDE_FROM_POS_FILES},,,
+"C1,C2,C3,C35,C37,C40",6,0.1μF,,,,,${EXCLUDE_FROM_POS_FILES},Capacitor_SMD:C_0201_0603Metric,,
+"C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C16,C17,C18,C19,C20,C21,C22,C23,C24,C25,C27,C28,C29,C30,C31,C32",26,0.1μf,,,,,${EXCLUDE_FROM_POS_FILES},Capacitor_SMD:C_0201_0603Metric,,
+"C15,C26,C39",3,4.7μf,,,,,${EXCLUDE_FROM_POS_FILES},Capacitor_SMD:C_01005_0402Metric,,
+C33,1,1μf,,,,,${EXCLUDE_FROM_POS_FILES},Capacitor_SMD:C_0201_0603Metric,,
+C34,1,10pF,,,,,${EXCLUDE_FROM_POS_FILES},Capacitor_SMD:C_0201_0603Metric,,
+C36,1,4.7μF,,,,,${EXCLUDE_FROM_POS_FILES},Capacitor_SMD:C_0201_0603Metric,,
+C38,1,4.7μF,,,,,${EXCLUDE_FROM_POS_FILES},Capacitor_SMD:C_01005_0402Metric,,
+D1,1,LED,,,,,${EXCLUDE_FROM_POS_FILES},LED_SMD:LED_0603_1608Metric,,
+IC1,1,E22-900M22S,,,,,${EXCLUDE_FROM_POS_FILES},e22:WIRELM-SMD_E22-900M22S,,6
+Q1,1,BCV29,,,,,${EXCLUDE_FROM_POS_FILES},Package_TO_SOT_SMD:SOT-89-3,https://assets.nexperia.com/documents/data-sheet/BCV29_49.pdf,
+"R1,R2",2,2.7K,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+R3,1,4.7K,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+R4,1,48,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+"R5,R6",2,200,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+"R7,R8",2,240,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+"R9,R11,R12",3,10K,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+R10,1,4.7k,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+R13,1,R_Small,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+R14,1,0,,,,,${EXCLUDE_FROM_POS_FILES},Resistor_SMD:R_0402_1005Metric,,
+U2,1,ADXL343,,,,,${EXCLUDE_FROM_POS_FILES},Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y,https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf,2.77
+U3,1,RK3588S,,,,,${EXCLUDE_FROM_POS_FILES},rk3588s:FCCSP1253L,,
+U4,1,K4UCE3Q4AB-MGCL,,,,,${EXCLUDE_FROM_POS_FILES},easyeda2kicad:FBGA-200_L15.0-W10.0-BL_RS512M32LO4D1BDS-53BT,https://www.lcsc.com/datasheet/C29073172.pdf,129.72
+U5,1,FEMDRW032G-88A19,,,,,${EXCLUDE_FROM_POS_FILES},easyeda2kicad:FBGA-153_L13.0-W11.5-P0.50_KLMAG1JETD-B041,https://lcsc.com/product-detail/FLASH_FORESEE-FEMDRW032G-88A19_C719926.html,
+smd,58,,,,,,,,,Tot:250
+bga,3,,,,,,,,,
