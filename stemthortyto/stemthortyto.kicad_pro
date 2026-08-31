@@ -530,6 +530,17 @@
         "clearance": 0.1016,
         "name": "D1-K",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "tuning_profile": "",
+        "via_diameter": 0.127,
+        "via_drill": 0.127
+      },
+      {
+        "clearance": 0.1016,
+        "name": "Net-(D1-A)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
@@ -541,7 +552,7 @@
         "clearance": 0.1016,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "tuning_profile": "",
@@ -574,6 +585,10 @@
       {
         "netclass": "PWR",
         "pattern": "+1V8"
+      },
+      {
+        "netclass": "Net-(D1-A)",
+        "pattern": "Net-(D1-A)"
       }
     ]
   },
