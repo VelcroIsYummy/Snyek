@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 0.0,
+          "height": 0.64,
+          "width": 0.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.5,
-          "min_island_area": 10.0,
+          "min_island_area": 9.99999999996,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
@@ -146,7 +146,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1016,
+        "min_clearance": 0.0508,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0508,
         "min_groove_width": 0.0,
@@ -158,10 +158,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.1524,
+        "min_through_hole_diameter": 0.0762,
         "min_track_width": 0.1016,
         "min_via_annular_width": 0.0254,
-        "min_via_diameter": 0.254,
+        "min_via_diameter": 0.127,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -211,7 +211,8 @@
       ],
       "track_widths": [
         0.0,
-        0.1016
+        0.1016,
+        0.2032
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -509,7 +510,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1016,
+        "clearance": 0.0508,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -527,8 +528,30 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.1016,
+        "clearance": 0.0508,
         "name": "D1-K",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "tuning_profile": "",
+        "via_diameter": 0.127,
+        "via_drill": 0.127
+      },
+      {
+        "clearance": 0.0508,
+        "name": "HIPWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "tuning_profile": "",
+        "via_diameter": 0.3,
+        "via_drill": 0.25
+      },
+      {
+        "clearance": 0.0508,
+        "name": "Net-(D1-A)",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -538,21 +561,10 @@
         "via_drill": 0.127
       },
       {
-        "clearance": 0.1016,
-        "name": "Net-(D1-A)",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2032,
-        "tuning_profile": "",
-        "via_diameter": 0.127,
-        "via_drill": 0.127
-      },
-      {
-        "clearance": 0.1016,
+        "clearance": 0.0508,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "tuning_profile": "",
@@ -566,10 +578,6 @@
     "net_colors": null,
     "netclass_assignments": null,
     "netclass_patterns": [
-      {
-        "netclass": "PWR",
-        "pattern": "+3.3V"
-      },
       {
         "netclass": "PWR",
         "pattern": "GND"
@@ -589,6 +597,34 @@
       {
         "netclass": "Net-(D1-A)",
         "pattern": "Net-(D1-A)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(U4-ZQ0)"
+      },
+      {
+        "netclass": "HIPWR",
+        "pattern": "Net-(U4-ZQ1)"
+      },
+      {
+        "netclass": "HIPWR",
+        "pattern": "Net-(U1-GND)"
+      },
+      {
+        "netclass": "HIPWR",
+        "pattern": "Net-(U1-VI)"
+      },
+      {
+        "netclass": "HIPWR",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "HIPWR",
+        "pattern": "HIPWR3.3"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "3.3V"
       }
     ]
   },
@@ -811,7 +847,7 @@
         "uuid": "22f1fa3f-8869-41ca-81f8-31f024e4ddf1"
       }
     ],
-    "used_designators": "U1-5,#PWR1-30,AE1,D1,R1-14,J1-3,IC1,C1-40,Q1",
+    "used_designators": "U1-5,Q1,#PWR1-30,AE1,D1,C1-40,R1-14,J1-3,IC1",
     "variants": []
   },
   "sheets": [
