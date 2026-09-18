@@ -1,0 +1,9 @@
+(version 1)
+(rule ddrdq
+	(condition "A.hasNetclass('DQ')")
+	(constraint length (min 147ps) (opt 157ps) (max 167ps))
+)
+(rule addrcmd
+	(condition "A.hasNetclass('ADDR')")
+	(constraint length (min 129ps) (opt 149ps) (max 169ps))
+)

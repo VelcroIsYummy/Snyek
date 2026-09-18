@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.64,
-          "width": 0.54
+          "height": 0.3,
+          "width": 0.3
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.5,
-          "min_island_area": 9.99999999996,
+          "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
@@ -244,6 +244,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.25,
+          "drill": 0.15
         }
       ],
       "zones_allow_external_fillets": false
@@ -511,9 +515,9 @@
       {
         "bus_width": 12,
         "clearance": 0.0508,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.0508,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.1016,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -529,9 +533,20 @@
       },
       {
         "clearance": 0.0508,
+        "name": "ADDR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1016,
+        "tuning_profile": "ADDR",
+        "via_diameter": 0.127,
+        "via_drill": 0.25
+      },
+      {
+        "clearance": 0.0508,
         "name": "D1-K",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "tuning_profile": "",
@@ -540,9 +555,42 @@
       },
       {
         "clearance": 0.0508,
+        "name": "DQ",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1016,
+        "tuning_profile": "DQ",
+        "via_diameter": 0.127,
+        "via_drill": 0.25
+      },
+      {
+        "clearance": 0.0508,
+        "name": "DQS0B_N",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "tuning_profile": "",
+        "via_diameter": 0.127,
+        "via_drill": 0.25
+      },
+      {
+        "clearance": 0.0508,
+        "name": "DQS0B_P",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "tuning_profile": "",
+        "via_diameter": 0.127,
+        "via_drill": 0.25
+      },
+      {
+        "clearance": 0.0508,
         "name": "HIPWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
         "tuning_profile": "",
@@ -553,7 +601,7 @@
         "clearance": 0.0508,
         "name": "Net-(D1-A)",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "tuning_profile": "",
@@ -564,12 +612,23 @@
         "clearance": 0.0508,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "tuning_profile": "",
         "via_diameter": 0.127,
         "via_drill": 0.127
+      },
+      {
+        "clearance": 0.0508,
+        "name": "eMMC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1016,
+        "tuning_profile": "DQ",
+        "via_diameter": 0.127,
+        "via_drill": 0.25
       }
     ],
     "meta": {
@@ -625,6 +684,50 @@
       {
         "netclass": "PWR",
         "pattern": "3.3V"
+      },
+      {
+        "netclass": "DQS0B_P",
+        "pattern": "DQS0PB"
+      },
+      {
+        "netclass": "DQS0B_N",
+        "pattern": "DQS0NB"
+      },
+      {
+        "netclass": "DQ",
+        "pattern": "DQ*"
+      },
+      {
+        "netclass": "DQ",
+        "pattern": "DM*"
+      },
+      {
+        "netclass": "ADDR",
+        "pattern": "A*"
+      },
+      {
+        "netclass": "ADDR",
+        "pattern": "CKA_P"
+      },
+      {
+        "netclass": "ADDR",
+        "pattern": "CKA_N"
+      },
+      {
+        "netclass": "ADDR",
+        "pattern": "CKE*"
+      },
+      {
+        "netclass": "ADDR",
+        "pattern": "CS*"
+      },
+      {
+        "netclass": "ADDR",
+        "pattern": "CKB_(N|P)"
+      },
+      {
+        "netclass": "eMMC",
+        "pattern": "DAT*"
       }
     ]
   },
@@ -847,7 +950,7 @@
         "uuid": "22f1fa3f-8869-41ca-81f8-31f024e4ddf1"
       }
     ],
-    "used_designators": "U1-5,Q1,#PWR1-30,AE1,D1,C1-40,R1-14,J1-3,IC1",
+    "used_designators": "IC1,J1-3,R1-14,C1-40,D1,AE1,#PWR1-30,Q1,U1-5",
     "variants": []
   },
   "sheets": [
@@ -861,6 +964,83 @@
     "meta": {
       "version": 0
     },
-    "tuning_profiles_impedance_geometric": []
+    "tuning_profiles_impedance_geometric": [
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In5.Cu",
+            "delay": 7094700,
+            "diff_pair_gap": 0,
+            "signal_layer": "In3.Cu",
+            "top_reference_layer": "In1.Cu",
+            "width": 101600
+          },
+          {
+            "bottom_reference_layer": "In5.Cu",
+            "delay": 7094700,
+            "diff_pair_gap": 0,
+            "signal_layer": "In4.Cu",
+            "top_reference_layer": "In1.Cu",
+            "width": 101600
+          },
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5553500,
+            "diff_pair_gap": 0,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 101600
+          },
+          {
+            "bottom_reference_layer": "In6.Cu",
+            "delay": 7094700,
+            "diff_pair_gap": 0,
+            "signal_layer": "In5.Cu",
+            "top_reference_layer": "In1.Cu",
+            "width": 101600
+          },
+          {
+            "bottom_reference_layer": "B.Cu",
+            "delay": 7094700,
+            "diff_pair_gap": 0,
+            "signal_layer": "In6.Cu",
+            "top_reference_layer": "In5.Cu",
+            "width": 101600
+          }
+        ],
+        "profile_name": "DQ",
+        "target_impedance": 111.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 6000000
+      },
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "B.Cu",
+            "delay": 7094700,
+            "diff_pair_gap": 0,
+            "signal_layer": "In5.Cu",
+            "top_reference_layer": "In1.Cu",
+            "width": 101600
+          },
+          {
+            "bottom_reference_layer": "B.Cu",
+            "delay": 7094700,
+            "diff_pair_gap": 0,
+            "signal_layer": "In6.Cu",
+            "top_reference_layer": "In5.Cu",
+            "width": 101600
+          }
+        ],
+        "profile_name": "ADDR",
+        "target_impedance": 111.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 6000000
+      }
+    ]
   }
 }
