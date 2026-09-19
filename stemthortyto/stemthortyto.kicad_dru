@@ -7,3 +7,7 @@
 	(condition "A.hasNetclass('ADDR')")
 	(constraint length (min 129ps) (opt 149ps) (max 169ps))
 )
+(rule eMMC
+	(condition "A.hasNetclass('eMMC')")
+	(constraint length (min 120ps) (opt 130ps) (max 140ps))
+)

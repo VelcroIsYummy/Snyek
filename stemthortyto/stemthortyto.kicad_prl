@@ -5,7 +5,7 @@
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -122,7 +122,7 @@
     ],
     "custom_group_rules": [],
     "expanded_rows": [
-      "ADDR and Default"
+      "eMMC and Default"
     ],
     "filter_by_net_name": true,
     "filter_by_netclass": true,
