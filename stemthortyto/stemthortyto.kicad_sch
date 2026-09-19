@@ -33514,6 +33514,12 @@
 		(uuid "15ebfe69-a423-44e2-bc5b-ed940318aff7")
 	)
 	(junction
+		(at 254 320.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "180d36a2-5195-466a-a69e-e3305eb51a4b")
+	)
+	(junction
 		(at 274.32 203.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -36789,16 +36795,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 360.68) (xy 259.08 360.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45d08631-5734-4952-b898-139aaba3ff4e")
-	)
-	(wire
-		(pts
 			(xy 88.9 534.67) (xy 88.9 537.21)
 		)
 		(stroke
@@ -38269,7 +38265,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 360.68) (xy 252.73 360.68)
+			(xy 251.46 360.68) (xy 259.08 360.68)
 		)
 		(stroke
 			(width 0)
@@ -38579,7 +38575,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 269.24) (xy 270.51 269.24)
+			(xy 269.24 269.24) (xy 276.86 269.24)
 		)
 		(stroke
 			(width 0)
@@ -39106,6 +39102,16 @@
 			(type default)
 		)
 		(uuid "a5aa3ab1-7799-4a90-b935-da25d61021ad")
+	)
+	(wire
+		(pts
+			(xy 254 320.04) (xy 265.43 320.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6891e8f-13e8-479f-b153-211783451a3f")
 	)
 	(wire
 		(pts
@@ -40346,16 +40352,6 @@
 			(type default)
 		)
 		(uuid "dbcfd204-945c-4b86-bcc4-750314c62858")
-	)
-	(wire
-		(pts
-			(xy 275.59 269.24) (xy 276.86 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc015c2c-a859-4390-80f4-e7b327c9be25")
 	)
 	(wire
 		(pts
@@ -209567,6 +209563,30 @@
 			)
 		)
 	)
+	(global_label "RST"
+		(shape input)
+		(at 265.43 320.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7ec7a4d9-1cef-4c08-93c1-8a5d573309c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.8623 320.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "DAT5"
 		(shape input)
 		(at 227.33 219.71 180)
@@ -240870,85 +240890,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 255.27 360.68 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "95f7494e-cecc-4ae6-9962-2003b392ead0")
-		(property "Reference" "R14"
-			(at 255.27 356.108 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 255.27 358.648 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 255.27 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 255.27 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "aa542336-6996-43ae-a86d-d2939d8cefe3")
-		)
-		(pin "1"
-			(uuid "bc040d90-dbac-4f4e-9c93-82dbbd132cfb")
-		)
-		(instances
-			(project "stemthortyto"
-				(path "/22f1fa3f-8869-41ca-81f8-31f024e4ddf1"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 375.92 234.95 0)
 		(unit 1)
@@ -245101,86 +245042,6 @@
 				(path "/22f1fa3f-8869-41ca-81f8-31f024e4ddf1"
 					(reference "U3")
 					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 273.05 269.24 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aeb8c6b5-75aa-4367-b1c2-aff68a467a5e")
-		(property "Reference" "R13"
-			(at 273.05 264.16 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_Small"
-			(at 273.05 266.7 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 273.05 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 273.05 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 273.05 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9aaf0f1e-2a4e-4ddd-9ac8-8a210ed2ef6e")
-		)
-		(pin "2"
-			(uuid "8cbd2ed6-1b8e-4e62-9dd6-0109dcb7eff1")
-		)
-		(instances
-			(project "stemthortyto"
-				(path "/22f1fa3f-8869-41ca-81f8-31f024e4ddf1"
-					(reference "R13")
-					(unit 1)
 				)
 			)
 		)
@@ -250487,7 +250348,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1μf"
+		(property "Value" "2.2μf"
 			(at 222.25 247.6562 0)
 			(show_name no)
 			(do_not_autoplace no)

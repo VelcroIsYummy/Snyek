@@ -728,6 +728,26 @@
       {
         "netclass": "eMMC",
         "pattern": "DAT*"
+      },
+      {
+        "netclass": "eMMC",
+        "pattern": "DATASTROBE"
+      },
+      {
+        "netclass": "eMMC",
+        "pattern": "RST"
+      },
+      {
+        "netclass": "eMMC",
+        "pattern": "CMD"
+      },
+      {
+        "netclass": "eMMC",
+        "pattern": "Net-(U5-CLK)"
+      },
+      {
+        "netclass": "eMMC",
+        "pattern": "CLKOUT"
       }
     ]
   },
