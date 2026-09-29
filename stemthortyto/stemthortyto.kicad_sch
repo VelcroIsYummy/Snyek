@@ -33297,8 +33297,8 @@
 		(uuid "327a516c-0d58-4f93-8934-01dd00fec87b")
 	)
 	(rectangle
-		(start 325.12 217.17)
-		(end 572.77 444.5)
+		(start 323.85 162.56)
+		(end 396.24 200.025)
 		(stroke
 			(width 0.508)
 			(type default)
@@ -33361,7 +33361,7 @@
 	)
 	(text "PWR"
 		(exclude_from_sim no)
-		(at 450.088 223.52 0)
+		(at 358.14 166.624 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -33808,7 +33808,7 @@
 		(uuid "5a8c3dbf-d39e-4d8b-98d0-4f2c10c86a97")
 	)
 	(junction
-		(at 365.76 243.84)
+		(at 364.49 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b4a4ccf-d21c-4bfa-86f1-0ae7e5fc6f36")
@@ -34420,7 +34420,7 @@
 		(uuid "d849da03-7eca-42e1-87e5-3bebdfa23fa7")
 	)
 	(junction
-		(at 375.92 236.22)
+		(at 374.65 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d93bd966-f918-4c2e-934a-0bccbd1fce7f")
@@ -35281,7 +35281,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 243.84) (xy 375.92 242.57)
+			(xy 374.65 189.23) (xy 374.65 187.96)
 		)
 		(stroke
 			(width 0)
@@ -35811,7 +35811,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 243.84) (xy 375.92 243.84)
+			(xy 364.49 189.23) (xy 374.65 189.23)
 		)
 		(stroke
 			(width 0)
@@ -36361,7 +36361,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 243.84) (xy 365.76 243.84)
+			(xy 351.79 189.23) (xy 364.49 189.23)
 		)
 		(stroke
 			(width 0)
@@ -36421,7 +36421,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 234.95) (xy 375.92 236.22)
+			(xy 374.65 180.34) (xy 374.65 181.61)
 		)
 		(stroke
 			(width 0)
@@ -37721,7 +37721,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 237.49) (xy 353.06 236.22)
+			(xy 351.79 182.88) (xy 351.79 181.61)
 		)
 		(stroke
 			(width 0)
@@ -37771,7 +37771,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 236.22) (xy 375.92 237.49)
+			(xy 374.65 181.61) (xy 374.65 182.88)
 		)
 		(stroke
 			(width 0)
@@ -37821,7 +37821,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 242.57) (xy 353.06 243.84)
+			(xy 351.79 187.96) (xy 351.79 189.23)
 		)
 		(stroke
 			(width 0)
@@ -38021,7 +38021,7 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 236.22) (xy 375.92 236.22)
+			(xy 372.11 181.61) (xy 374.65 181.61)
 		)
 		(stroke
 			(width 0)
@@ -39211,7 +39211,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 236.22) (xy 358.14 236.22)
+			(xy 351.79 181.61) (xy 356.87 181.61)
 		)
 		(stroke
 			(width 0)
@@ -214855,7 +214855,7 @@
 	(symbol
 		(lib_name "C_Small_1")
 		(lib_id "Device:C_Small")
-		(at 375.92 240.03 0)
+		(at 374.65 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -214866,7 +214866,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c785e0f-eb63-4e4c-9a6e-0abb13e34882")
 		(property "Reference" "C41"
-			(at 378.46 238.7599 0)
+			(at 377.19 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -214877,7 +214877,7 @@
 			)
 		)
 		(property "Value" "22μF"
-			(at 378.46 241.2999 0)
+			(at 377.19 186.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -214888,7 +214888,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 375.92 240.03 0)
+			(at 374.65 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -214899,7 +214899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 375.92 240.03 0)
+			(at 374.65 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -214910,7 +214910,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 375.92 250.19 0)
+			(at 374.65 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -218933,7 +218933,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Jack-DC")
-		(at 345.44 240.03 0)
+		(at 344.17 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -218944,7 +218944,7 @@
 		(fields_autoplaced yes)
 		(uuid "349b292b-9d8c-495c-8c8f-32f520704268")
 		(property "Reference" "J1"
-			(at 345.44 231.14 0)
+			(at 344.17 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -218954,7 +218954,7 @@
 			)
 		)
 		(property "Value" "Jack-DC"
-			(at 345.44 233.68 0)
+			(at 344.17 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -218964,7 +218964,7 @@
 			)
 		)
 		(property "Footprint" "Connector_BarrelJack:BarrelJack_Kycon_KLDX-0202-xC_Horizontal"
-			(at 346.71 241.046 0)
+			(at 345.44 186.436 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -218975,7 +218975,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 346.71 241.046 0)
+			(at 345.44 186.436 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -218986,7 +218986,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack"
-			(at 345.44 240.03 0)
+			(at 344.17 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -240288,7 +240288,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:LT1585-3.3")
-		(at 365.76 236.22 0)
+		(at 364.49 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -240299,7 +240299,7 @@
 		(fields_autoplaced yes)
 		(uuid "85a54363-4c44-485e-b601-e9bf4b44e955")
 		(property "Reference" "U1"
-			(at 365.76 229.87 0)
+			(at 364.49 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -240309,7 +240309,7 @@
 			)
 		)
 		(property "Value" "LT1585-3.3"
-			(at 365.76 232.41 0)
+			(at 364.49 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -240319,7 +240319,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 365.76 236.22 0)
+			(at 364.49 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -240330,7 +240330,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/158457a.pdf"
-			(at 365.76 236.22 0)
+			(at 364.49 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -240341,7 +240341,7 @@
 			)
 		)
 		(property "Description" "Positive 4.6A 35V Low Dropout Fast Response Linear Regulator, Fixed Output 3.3V, TO-220/TO-263"
-			(at 365.76 236.22 0)
+			(at 364.49 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -241015,7 +241015,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 375.92 234.95 0)
+		(at 374.65 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -241026,7 +241026,7 @@
 		(fields_autoplaced yes)
 		(uuid "97d6552a-c467-4c0b-a1e4-c9481f26d204")
 		(property "Reference" "#PWR012"
-			(at 375.92 238.76 0)
+			(at 374.65 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -241037,7 +241037,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 375.92 229.87 0)
+			(at 374.65 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -241047,7 +241047,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-40_W15.24mm"
-			(at 375.92 234.95 0)
+			(at 374.65 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -241058,7 +241058,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 375.92 234.95 0)
+			(at 374.65 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -241069,7 +241069,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 375.92 234.95 0)
+			(at 374.65 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -241417,7 +241417,7 @@
 	)
 	(symbol
 		(lib_id "RK3588S:RK3588S")
-		(at 434.34 40.64 0)
+		(at 414.02 219.71 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -241428,7 +241428,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5d4c85b-0d0c-4d1e-8b6c-71c541854f08")
 		(property "Reference" "U3"
-			(at 580.39 121.9199 0)
+			(at 560.07 300.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -241439,7 +241439,7 @@
 			)
 		)
 		(property "Value" "RK3588S"
-			(at 580.39 124.4599 0)
+			(at 560.07 303.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -241450,7 +241450,7 @@
 			)
 		)
 		(property "Footprint" "rk3588s:FCCSP1253L"
-			(at 439.42 39.37 0)
+			(at 419.1 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -241462,7 +241462,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 439.42 44.45 0)
+			(at 419.1 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -241474,7 +241474,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 434.34 40.64 0)
+			(at 414.02 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
